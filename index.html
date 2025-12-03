@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Rizal Roadmap</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -18,15 +18,39 @@
     </div>
 </header>
 
+<div class="progress-container" id="mainProgressContainer">
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-text" id="progressText">Start of Journey</div>
+</div>
+
 <div class="view-toggle">
     <button class="toggle-btn active" data-view="timeline">Timeline View</button>
     <button class="toggle-btn" data-view="map">Location View</button>
 </div>
 
-<div class="progress-container" id="mainProgressContainer">
-    <div class="progress-bar" id="progressBar"></div>
-    <div class="progress-text" id="progressText">Start of Journey</div>
-</div>
+<section class="legend-section">
+    <div class="container">
+        <h3>Legend</h3>
+        <div class="legend-grid">
+            <div class="legend-item">
+                <span class="legend-marker blue-marker"></span>
+                <span>Foundations</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-marker gold-marker"></span>
+                <span>Pivotal</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-marker green-marker"></span>
+                <span>Sentiments</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-marker red-marker"></span>
+                <span>Culmination</span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="timeline-section">
     <div class="container">
@@ -41,7 +65,7 @@
                          data-type="Foundation"
                          data-summary="The formation of Rizal's character was deeply rooted in his family environment, the fable of the moth, and early exposure to colonial injustice."
                          data-key-points="Family Influences: Mentored by Tio Jose (Arts), Tio Manuel (Sports), and Tio Gregorio (Books);The Parable of the Moth: Learned that 'light is worthy enough for a man to sacrifice his life for it';Injustice: Witnessed the imprisonment of his mother Teodora Alonso and the execution of Gomburza (1872)."
-                         data-significance="These events awakened his young mind to the existence of injustice and the need for courage/sacrifice.">
+                         data-significance="Instilled initial patriotic sentiments and a deeply rooted sense of justice.">
                         <h2>1. Childhood and Early Influences</h2>
                         <span class="click-hint">Click for details</span>
                     </div>
@@ -77,7 +101,7 @@
                           data-type="Pivotal Definition"
                           data-summary="A prize-winning poem at UST where Rizal explicitly addresses the Filipino youth as a distinct national asset."
                           data-key-points="Famous Line: 'Fair hope of the Fatherland' (Bella esperanza de la Patria Mia);First time a native Filipino called the Philippines his 'Fatherland' instead of Spain;Urges youth to use science and art to break the chains of ignorance."
-                          data-significance="It defined the role of the youth in nation-building and challenged the notion that Filipinos were inferior."
+                          data-significance="Defines the path for national progress: intellectual development and education."
                      >
                         <h2>3. A La Juventud Filipina</h2>
                         <span class="click-hint">Click for details</span>
@@ -117,7 +141,7 @@
                           data-type="Ideological Crossroads"
                           data-summary="The 'Social Cancer'. While Ibarra represents idealism, Elias represents the voice of the oppressed masses."
                           data-key-points="Character Contrast: Ibarra wants schools; Elias wants justice for the persecuted;Debate: Elias argues that peaceful reform is impossible when the system is rotten;Sacrifice: Elias dies so Ibarra can live, symbolizing the sacrifice of the masses."
-                          data-significance="Rizal used Elias to present the terrifying reality that revolution might be the only option if reforms fail."
+                          data-significance="Confronted the reality that oppression might necessitate violent revolution, moving beyond simple reform."
                      >
                         <h2>5. The Elias Storyline (Noli Me Tangere)</h2>
                         <span class="click-hint">Click for details</span>
@@ -139,7 +163,7 @@
                           data-type="Moral Resolution"
                           data-summary="The 'Reign of Greed'. Simoun's plot to blow up the wedding feast fails, leading to a final moral dialogue."
                           data-key-points="Simoun's Failure: His revolution was based on hate and vengeance, not justice;Fr. Florentino's Thesis: 'Why independence, if the slaves of today will be the tyrants of tomorrow?';Redemption: Requires virtue, sacrifice, and love. The weapon is the character of the people."
-                          data-significance="Rizal rejects premature, violent revolution. He posits that national freedom must be earned through moral development."
+                          data-significance="Resolves the ideological crisis by rejecting premature violence in favor of moral preparation."
                      >
                         <h2>6. Conclusion of El Filibusterismo</h2>
                         <span class="click-hint">Click for details</span>
@@ -157,7 +181,7 @@
                           data-type="Organized Action"
                           data-summary="Upon returning to Manila, Rizal founded this civic organization with the motto 'Unus Instar Omnium' (One Like All)."
                           data-key-points="Structure: A socio-civic organization, not a revolutionary army;Aims: Mutual protection, defense against violence, encouragement of education/agriculture;Outcome: Rizal was arrested days later, splitting the group into the Cuerpo de Compromisarios (Reformers) and the Katipunan (Revolutionaries)."
-                          data-significance="This was Rizal's attempt to peacefully unite the archipelago into a compact, vigorous, and homogenous body."
+                          data-significance="The culminating attempt at a non-violent, unified reform movement."
                      >
                         <h2>7. La Liga Filipina</h2>
                         <span class="click-hint">Click for details</span>
@@ -175,7 +199,7 @@
                           data-type="Ultimate Culmination"
                           data-summary="Rizal's final poem, hidden in an alcohol stove, written on the eve of his execution."
                           data-key-points="Selfless Love: Willingness to die for the 'Pearl of the Orient Seas';No Bitterness: He frames his death not as a defeat, but as a necessary repose;Legacy: The poem was smuggled out and copied, fueling the fires of the revolution."
-                          data-significance="It solidified Rizal as the moral center of the Philippine Revolution, turning his execution into a martyrdom."
+                          data-significance="Galvanized the revolution and solidified his status as the National Hero."
                      >
                         <h2>8. Mi Último Adiós</h2>
                         <span class="click-hint">Click for details</span>
@@ -185,7 +209,7 @@
             </div>
 
         </div> 
-        <div style="clear: both; height: 20px;"></div>
+        <div style="clear: both; height: 100px;"></div>
     </div>
 </section>
 
@@ -256,7 +280,7 @@
                  data-description="Four years of productive exile in Zamboanga del Norte."
                  data-details="Community Development: Built a water system, school, and lighting system;Scientific Work: Discovered species like Draco rizali (lizard) and Rhacophorus rizali (frog);Personal Life: Won the lottery (Ticket 9736) and met Josephine Bracken">
                 <div class="location-number">5</div>
-                <img src="images/dapitan.JPG" alt="Dapitan" class="location-img">
+                <img src="images/dapitan.jpg" alt="Dapitan" class="location-img">
                 <div class="location-info">
                     <h3>Dapitan</h3>
                     <p class="location-year">1892-1896</p>
@@ -278,30 +302,6 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<section class="legend-section">
-    <div class="container">
-        <h3>Legend</h3>
-        <div class="legend-grid">
-            <div class="legend-item">
-                <span class="legend-marker blue-marker"></span>
-                <span>Foundations</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-marker gold-marker"></span>
-                <span>Pivotal</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-marker green-marker"></span>
-                <span>Sentiments</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-marker red-marker"></span>
-                <span>Culmination</span>
-            </div>
         </div>
     </div>
 </section>

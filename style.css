@@ -107,16 +107,15 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255,255,255,0.5);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     padding: 15px 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: opacity 0.3s ease;
-    margin-bottom: 0;
 }
 
 .progress-bar {
     height: 6px;
-    background: #2c3e50;
+    background: white;
     border-radius: 3px;
     width: 0%;
     transition: width 0.3s ease;
@@ -126,7 +125,7 @@ body {
 
 .progress-text {
     text-align: center;
-    color: #2c3e50;
+    color: white;
     font-size: 0.9rem;
     margin-top: 8px;
     font-weight: 500;
@@ -150,12 +149,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .toggle-btn:hover {
@@ -172,16 +165,16 @@ body {
 /* --- Legend Section --- */
 .legend-section {
     background: rgba(255, 255, 255, 0.7);
-    padding: 15px 0;
-    margin-bottom: 0;
+    padding: 25px 0;
+    margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .legend-section h3 {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #2c3e50;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -199,17 +192,16 @@ body {
 .legend-item {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
+    gap: 8px;
+    padding: 8px 18px;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    font-size: 0.9rem;
 }
 
 .legend-marker {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -221,8 +213,8 @@ body {
 
 /* --- Timeline Core Structure --- */
 .timeline-section {
-    padding: 20px 0 20px;
-    overflow: hidden;
+    padding: 20px 0 150px; /* Increased bottom padding */
+    flex: 1;
 }
 
 .timeline {
@@ -499,10 +491,11 @@ body {
     visibility: visible;
 }
 
-/* --- MAP SECTION STYLES (UPDATED TO GRID) --- */
+/* --- MAP SECTION STYLES (GRID) --- */
 .map-section {
-    padding: 40px 20px 20px;
+    padding: 40px 20px;
     background: rgba(255,255,255,0.9);
+    min-height: 700px;
 }
 
 .map-section h2 {
@@ -682,10 +675,10 @@ body {
 .main-footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    padding: 25px 0;
+    padding: 30px 0;
     text-align: center;
     position: relative; 
     z-index: 10;
     width: 100%;
-    margin-top: 0;
+    margin-top: auto; 
 }

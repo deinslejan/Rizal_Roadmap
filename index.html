@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- Animated particles background -->
 <div class="particles" id="particles"></div>
 
 <header class="main-header">
@@ -18,6 +17,270 @@
         <p>An interactive conceptual roadmap. Click on any milestone to explore details.</p>
     </div>
 </header>
+
+<div class="view-toggle">
+    <button class="toggle-btn active" data-view="timeline">Timeline View</button>
+    <button class="toggle-btn" data-view="map">Location View</button>
+</div>
+
+<div class="progress-container" id="mainProgressContainer">
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-text" id="progressText">Start of Journey</div>
+</div>
+
+<section class="timeline-section">
+    <div class="container">
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1861-1872</div>
+                    <div class="content-box foundation-box js-trigger-sidebar"
+                         data-title="1. Childhood and Early Influences"
+                         data-type="Foundation"
+                         data-summary="The formation of Rizal's character was deeply rooted in his family environment, the fable of the moth, and early exposure to colonial injustice."
+                         data-key-points="Family Influences: Mentored by Tio Jose (Arts), Tio Manuel (Sports), and Tio Gregorio (Books);The Parable of the Moth: Learned that 'light is worthy enough for a man to sacrifice his life for it';Injustice: Witnessed the imprisonment of his mother Teodora Alonso and the execution of Gomburza (1872)."
+                         data-significance="These events awakened his young mind to the existence of injustice and the need for courage/sacrifice.">
+                        <h2>1. Childhood and Early Influences</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Influenced early perception of distinct identity ↓</p>
+                    <div class="branch-indicator">Early influences shape nationalist thinking</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">~1869</div>
+                     <div class="content-box sentiment-box js-trigger-sidebar"
+                          data-title="2. Sa Aking mga Kabata"
+                          data-type="Evolving Sentiment"
+                          data-summary="Traditionally attributed to Rizal at age 8, this poem establishes the connection between language and freedom."
+                          data-key-points="Theme: 'Ang hindi magmahal sa sariling wika, daig pa ang hayop at malansang isda';Asserts that Tagalog is equal to Latin, English, and Spanish;Demonstrates an early pride in native heritage."
+                          data-significance="Represents the earliest articulation of national identity: a people united by a common language."
+                          >
+                        <h2>2. Sa Aking mga Kabata</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Cultural identity matures into intellectual aspiration ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1879</div>
+                     <div class="content-box pivotal-box js-trigger-sidebar"
+                          data-title="3. A La Juventud Filipina"
+                          data-type="Pivotal Definition"
+                          data-summary="A prize-winning poem at UST where Rizal explicitly addresses the Filipino youth as a distinct national asset."
+                          data-key-points="Famous Line: 'Fair hope of the Fatherland' (Bella esperanza de la Patria Mia);First time a native Filipino called the Philippines his 'Fatherland' instead of Spain;Urges youth to use science and art to break the chains of ignorance."
+                          data-significance="It defined the role of the youth in nation-building and challenged the notion that Filipinos were inferior."
+                     >
+                        <h2>3. A La Juventud Filipina</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Educational ideal expands to broader social critique ↓</p>
+                    <div class="branch-split">
+                        <div class="branch-path left">Literary Works →</div>
+                        <div class="branch-path right">→ Social Advocacy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1889</div>
+                     <div class="content-box foundation-box js-trigger-sidebar"
+                          data-title="4. Letter to the Young Women of Malolos"
+                          data-type="Concrete Advocacy"
+                          data-summary="Written at the request of M.H. del Pilar, praising 20 women of Malolos who petitioned for a night school."
+                          data-key-points="Rejection of blind spiritual obedience to friars;Emphasis on the role of mothers in raising children with dignity and patriotism;Arguments for reason and critical thinking over superstition."
+                          data-significance="Broadened the reform agenda to include gender equality and the restructuring of the Filipino family unit."
+                     >
+                        <h2>4. Letter to the Young Women of Malolos</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Social critique deepens into confronting deep-seated tyranny ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1887</div>
+                     <div class="content-box pivotal-box js-trigger-sidebar"
+                          data-title="5. The Elias Storyline (Noli Me Tangere)"
+                          data-type="Ideological Crossroads"
+                          data-summary="The 'Social Cancer'. While Ibarra represents idealism, Elias represents the voice of the oppressed masses."
+                          data-key-points="Character Contrast: Ibarra wants schools; Elias wants justice for the persecuted;Debate: Elias argues that peaceful reform is impossible when the system is rotten;Sacrifice: Elias dies so Ibarra can live, symbolizing the sacrifice of the masses."
+                          data-significance="Rizal used Elias to present the terrifying reality that revolution might be the only option if reforms fail."
+                     >
+                        <h2>5. The Elias Storyline (Noli Me Tangere)</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">The conflict demands a mature moral resolution ↓</p>
+                     <div class="branch-split">
+                        <div class="branch-path left">Peaceful Reform (Ibarra)</div>
+                        <div class="branch-path right">Radical Action (Elias)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1891</div>
+                     <div class="content-box sentiment-box js-trigger-sidebar"
+                          data-title="6. Conclusion of El Filibusterismo"
+                          data-type="Moral Resolution"
+                          data-summary="The 'Reign of Greed'. Simoun's plot to blow up the wedding feast fails, leading to a final moral dialogue."
+                          data-key-points="Simoun's Failure: His revolution was based on hate and vengeance, not justice;Fr. Florentino's Thesis: 'Why independence, if the slaves of today will be the tyrants of tomorrow?';Redemption: Requires virtue, sacrifice, and love. The weapon is the character of the people."
+                          data-significance="Rizal rejects premature, violent revolution. He posits that national freedom must be earned through moral development."
+                     >
+                        <h2>6. Conclusion of El Filibusterismo</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Moral theory translated into peaceful, organized practice upon return ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1892</div>
+                     <div class="content-box foundation-box js-trigger-sidebar"
+                          data-title="7. La Liga Filipina"
+                          data-type="Organized Action"
+                          data-summary="Upon returning to Manila, Rizal founded this civic organization with the motto 'Unus Instar Omnium' (One Like All)."
+                          data-key-points="Structure: A socio-civic organization, not a revolutionary army;Aims: Mutual protection, defense against violence, encouragement of education/agriculture;Outcome: Rizal was arrested days later, splitting the group into the Cuerpo de Compromisarios (Reformers) and the Katipunan (Revolutionaries)."
+                          data-significance="This was Rizal's attempt to peacefully unite the archipelago into a compact, vigorous, and homogenous body."
+                     >
+                        <h2>7. La Liga Filipina</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Suppression of peaceful efforts leads to ultimate sacrifice ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img last-stop"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1896</div>
+                     <div class="content-box culmination-box js-trigger-sidebar"
+                          data-title="8. Mi Último Adiós"
+                          data-type="Ultimate Culmination"
+                          data-summary="Rizal's final poem, hidden in an alcohol stove, written on the eve of his execution."
+                          data-key-points="Selfless Love: Willingness to die for the 'Pearl of the Orient Seas';No Bitterness: He frames his death not as a defeat, but as a necessary repose;Legacy: The poem was smuggled out and copied, fueling the fires of the revolution."
+                          data-significance="It solidified Rizal as the moral center of the Philippine Revolution, turning his execution into a martyrdom."
+                     >
+                        <h2>8. Mi Último Adiós</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <div class="branch-indicator final">Legacy: Sparked Philippine Revolution & National Identity</div>
+                </div>
+            </div>
+
+        </div> 
+        <div style="clear: both; height: 20px;"></div>
+    </div>
+</section>
+
+<section class="map-section" id="mapView" style="display: none;">
+    <div class="container">
+        <h2>Rizal's Journey: Key Locations</h2>
+        <div class="locations-grid">
+            
+            <div class="location-card js-location-card"
+                 data-title="Calamba, Laguna"
+                 data-year="1861"
+                 data-description="The birthplace of the National Hero."
+                 data-details="Born on June 19, 1861, between 11:00 and 12:00 at night;Baptized by Father Rufino Collantes, with Father Pedro Casañas as godfather;The Mercado home was one of the first stone houses in Calamba, symbolizing their status">
+                <div class="location-number">1</div>
+                <img src="images/calamba.jpg" alt="Calamba, Laguna" class="location-img">
+                <div class="location-info">
+                    <h3>Calamba, Laguna</h3>
+                    <p class="location-year">1861</p>
+                    <p class="location-brief">Birthplace of José Rizal</p>
+                </div>
+            </div>
+
+            <div class="location-card js-location-card"
+                 data-title="Manila"
+                 data-year="1872-1882"
+                 data-description="The center of his formal academic years."
+                 data-details="Ateneo Municipal: Graduated 'Sobresaliente' (Excellent) with a Bachelor of Arts degree;UST: Studied Philosophy and Letters, then Ophthalmology;Experienced discrimination from Dominican professors which fueled his desire to go abroad">
+                <div class="location-number">2</div>
+                <img src="images/manila.jpg" alt="Manila" class="location-img">
+                <div class="location-info">
+                    <h3>Manila</h3>
+                    <p class="location-year">1872-1882</p>
+                    <p class="location-brief">Formal Education Period</p>
+                </div>
+            </div>
+
+            <div class="location-card js-location-card"
+                 data-title="Spain & Europe"
+                 data-year="1882-1887"
+                 data-description="The Propaganda Movement and the writing of Noli Me Tangere."
+                 data-details="Universidad Central de Madrid: Completed Licentiate in Medicine (1884);Joined the Circulo Hispano-Filipino and wrote for La Solidaridad;Published Noli Me Tangere in Berlin (1887) with the help of Maximo Viola">
+                <div class="location-number">3</div>
+                <img src="images/spain.jpg" alt="Spain" class="location-img">
+                <div class="location-info">
+                    <h3>Spain & Europe</h3>
+                    <p class="location-year">1882-1887</p>
+                    <p class="location-brief">Writing Period & Intellectual Development</p>
+                </div>
+            </div>
+
+            <div class="location-card js-location-card"
+                 data-title="Hong Kong"
+                 data-year="1891-1892"
+                 data-description="A brief respite and family reunion."
+                 data-details="Practiced as an ophthalmic surgeon (famed for removing cataracts);Drafted the constitution of La Liga Filipina here;Planned the 'North Borneo Project' to relocate landless Filipinos (rejected by Governor-General Despujol)">
+                <div class="location-number">4</div>
+                <img src="images/hongkong.jpg" alt="Hong Kong" class="location-img">
+                <div class="location-info">
+                    <h3>Hong Kong</h3>
+                    <p class="location-year">1891-1892</p>
+                    <p class="location-brief">Medical Practice & Family Reunion</p>
+                </div>
+            </div>
+
+            <div class="location-card js-location-card"
+                 data-title="Dapitan"
+                 data-year="1892-1896"
+                 data-description="Four years of productive exile in Zamboanga del Norte."
+                 data-details="Community Development: Built a water system, school, and lighting system;Scientific Work: Discovered species like Draco rizali (lizard) and Rhacophorus rizali (frog);Personal Life: Won the lottery (Ticket 9736) and met Josephine Bracken">
+                <div class="location-number">5</div>
+                <img src="images/dapitan.JPG" alt="Dapitan" class="location-img">
+                <div class="location-info">
+                    <h3>Dapitan</h3>
+                    <p class="location-year">1892-1896</p>
+                    <p class="location-brief">Exile & Community Service</p>
+                </div>
+            </div>
+
+            <div class="location-card js-location-card"
+                 data-title="Bagumbayan (Luneta)"
+                 data-year="December 30, 1896"
+                 data-description="The ultimate sacrifice for the nation."
+                 data-details="Tried by a military court for rebellion, sedition, and illegal association;Executed at 7:03 AM facing the rising sun;His death destroyed the Spanish moral claim to rule and ignited the revolution of 1896">
+                <div class="location-number">6</div>
+                <img src="images/bagumbayan.jpg" alt="Bagumbayan" class="location-img">
+                <div class="location-info">
+                    <h3>Bagumbayan (Luneta)</h3>
+                    <p class="location-year">December 30, 1896</p>
+                    <p class="location-brief">Execution & Ultimate Sacrifice</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <section class="legend-section">
     <div class="container">
@@ -43,146 +306,6 @@
     </div>
 </section>
 
-<section class="timeline-section">
-    <div class="container">
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                    <div class="content-box foundation-box js-trigger-sidebar"
-                         data-title="1. Childhood and Early Influences"
-                         data-type="Foundation"
-                         data-summary="The bedrock of his character laid by family environment and early education."
-                         data-key-points="Exposed to the loving, educated environment of the Mercado family;Early awareness of colonial injustice (e.g., mother's arrest);Impact of Gomburza execution on his young mind."
-                         data-significance="Instilled initial patriotic sentiments and a deeply rooted sense of justice.">
-                        <h2>1. Childhood and Early Influences</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                    <p class="transition-arrow">Influenced early perception of distinct identity ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box sentiment-box js-trigger-sidebar"
-                          data-title="2. Sa Aking mga Kabata"
-                          data-type="Evolving Sentiment"
-                          data-summary="Rizal's earliest known poem emphasizing the love for one's native tongue."
-                          data-key-points="Written at an early age (allegedly 8 years old);Connects language directly to freedom and liberty;Asserts that Tagalog is equal to other great languages like Latin or Spanish."
-                          data-significance="Represents his earliest articulation of national identity through cultural pride.">
-                        <h2>2. Sa Aking mga Kabata</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                    <p class="transition-arrow">Cultural identity matures into intellectual aspiration ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box pivotal-box js-trigger-sidebar"
-                          data-title="3. A La Juventud Filipina"
-                          data-type="Pivotal Definition"
-                          data-summary="A prize-winning poem where Rizal explicitly defines his vision for the youth."
-                          data-key-points="Coined the famous phrase 'Fair hope of the Fatherland';Urges Filipino youth to break the chains of ignorance through education, science, and arts;Subtly criticized Spanish perceived superiority by elevating native talent."
-                          data-significance="Defines the path for national progress: intellectual development and education."
-                     >
-                        <h2>3. A La Juventud Filipina</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                    <p class="transition-arrow">Educational ideal expands to broader social critique ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box foundation-box js-trigger-sidebar"
-                          data-title="4. Letter to the Young Women of Malolos"
-                          data-type="Concrete Advocacy"
-                          data-summary="A letter praising the women of Malolos for their bravery in demanding education."
-                          data-key-points="Critiqued blind obedience to friars and superstitious religious practices;Advocated for reason and critical thinking over subservience;Emphasized the crucial role of mothers in raising enlightened future citizens."
-                          data-significance="Broadened the reform agenda to include gender equality and social restructuring."
-                     >
-                        <h2>4. Letter to the Young Women of Malolos</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                     <p class="transition-arrow">Social critique deepens into confronting deep-seated tyranny ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box pivotal-box js-trigger-sidebar"
-                          data-title="5. The Elias Storyline (Noli Me Tangere)"
-                          data-type="Ideological Crossroads"
-                          data-summary="The personification of the oppressed masses and the argument for radical action."
-                          data-key-points="Elias represents those who have suffered the worst excesses of the colonial state;He argues that peaceful reform is insufficient against violent tyranny;Presents a stark contrast to Ibarra's initial idealism, creating internal ideological conflict."
-                          data-significance="Confronted the reality that oppression might necessitate violent revolution, moving beyond simple reform."
-                     >
-                        <h2>5. The Elias Storyline (Noli Me Tangere)</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                     <p class="transition-arrow">The conflict demands a mature moral resolution ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box sentiment-box js-trigger-sidebar"
-                          data-title="6. Conclusion of El Filibusterismo"
-                          data-type="Moral Resolution"
-                          data-summary="Rizal's philosophical conclusion regarding premature violence through Fr. Florentino."
-                          data-key-points="Simoun's violent, vengeful revolution fails fundamentally;Fr. Florentino argues that independence without civic virtue is useless;Establish the prerequisite: redemption requires sacrifice, love, and moral preparation first."
-                          data-significance="Resolves the ideological crisis by rejecting premature violence in favor of moral preparation."
-                     >
-                        <h2>6. Conclusion of El Filibusterismo</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                     <p class="transition-arrow">Moral theory translated into peaceful, organized practice upon return ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content">
-                     <div class="content-box foundation-box js-trigger-sidebar"
-                          data-title="7. La Liga Filipina"
-                          data-type="Organized Action"
-                          data-summary="The attempt to translate his mature theories into a concrete organization on Philippine soil."
-                          data-key-points="Aims: Unify the archipelago into a compact, vigorous, and homogeneous body;Mutual protection in every want and necessity;Defense against all violence and injustice;Study and application of reforms."
-                          data-significance="The culminating attempt at a non-violent, unified reform movement."
-                     >
-                        <h2>7. La Liga Filipina</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                     <p class="transition-arrow">Suppression of peaceful efforts leads to ultimate sacrifice ↓</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-img last-stop"></div>
-                <div class="timeline-content">
-                     <div class="content-box culmination-box js-trigger-sidebar"
-                          data-title="8. Mi Último Adiós"
-                          data-type="Ultimate Culmination"
-                          data-summary="His final testament, cementing his role as the martyred hero."
-                          data-key-points="Written on the eve of his execution;Expresses selfless love for the country and willingness to die for it;Framed his death not as defeat, but as a necessary sacrifice for the nation's redemption."
-                          data-significance="Galvanized the revolution and solidified his status as the National Hero."
-                     >
-                        <h2>8. Mi Último Adiós</h2>
-                        <span class="click-hint">Click for details</span>
-                    </div>
-                </div>
-            </div>
-
-        </div> </div>
-</section>
-
 <div class="details-sidebar" id="sidebar">
     <button class="close-btn" id="closeSidebar">&times;</button>
     <div class="sidebar-content">
@@ -202,6 +325,18 @@
     </div>
 </div>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="location-modal" id="locationModal">
+    <div class="modal-content">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <h2 id="modalTitle">Location Title</h2>
+        <div class="modal-body">
+            <p id="modalDescription"></p>
+            <div class="modal-details" id="modalDetails"></div>
+        </div>
+    </div>
+</div>
+<div class="modal-overlay" id="modalOverlay"></div>
 
 <footer class="main-footer">
     <div class="container">

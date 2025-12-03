@@ -3,112 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizal's Road to Nationalism</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Interactive Rizal Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Animated particles background -->
+<div class="particles" id="particles"></div>
+
 <header class="main-header">
     <div class="container">
         <h1>Rizal's Road to Nationalism and Heroism</h1>
-        <p>A conceptual roadmap of his ideological evolution.</p>
+        <p>An interactive conceptual roadmap. Click on any milestone to explore details.</p>
     </div>
 </header>
-
-<section class="timeline-section">
-    <div class="container">
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInLeft">
-                    <div class="content-box foundation-box">
-                        <h2>1. Childhood and Early Influences</h2>
-                        <p class="details">Details: Calamba environment, educated family connection to Gomburza. Laid foundation for moral character and early awareness of colonial injustice.</p>
-                    </div>
-                    <p class="transition-arrow">Influenced early perception of distinct identity ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInRight">
-                     <div class="content-box sentiment-box">
-                        <h2>2. Sa Aking mga Kabata</h2>
-                        <p class="details">Details: Early poem emphasizing love for native tongue as a sign of freedom and cultural identity.</p>
-                    </div>
-                    <p class="transition-arrow">Cultural identity matures into intellectual aspiration ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInLeft">
-                     <div class="content-box pivotal-box">
-                        <h2>3. A La Juventud Filipina</h2>
-                        <p class="details">Details: Defines youth as 'fair hope of the Fatherland.' Urges intellectual development through education, science, and art.</p>
-                    </div>
-                    <p class="transition-arrow">Educational ideal expands to broader social critique ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInRight">
-                     <div class="content-box foundation-box">
-                        <h2>4. Letter to the Young Women of Malolos</h2>
-                        <p class="details">Details: Advocated for women's education over blind obedience to friars. Emphasized mother's role in raising Enlightened citizens.</p>
-                    </div>
-                     <p class="transition-arrow">Social critique deepens into confronting deep-seated tyranny ↓</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInLeft">
-                     <div class="content-box pivotal-box">
-                        <h2>5. The Elias Storyline (Noli Me Tangere)</h2>
-                        <p class="details">Details: Represents the oppressed masses. Presents ideological conflict between peaceful reform (Ibarra) vs. necessary radicalism born of suffering.</p>
-                    </div>
-                     <p class="transition-arrow">The conflict demands a mature moral resolution ↓</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInRight">
-                     <div class="content-box sentiment-box">
-                        <h2>6. Conclusion of El Filibusterismo</h2>
-                        <p class="details">Details: Through Fr. Florentino, rejects premature, vengeful revolution. Argues liberty requires civic virtue, sacrifice, and preparation first.</p>
-                    </div>
-                     <p class="transition-arrow">Moral theory translated into peaceful, organized practice upon return ↓</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInLeft">
-                     <div class="content-box foundation-box">
-                        <h2>7. La Liga Filipina</h2>
-                        <p class="details">Details: Civic association aimed at unifying the archipelago for mutual protection, economic development, and non-violent reform.</p>
-                    </div>
-                     <p class="transition-arrow">Suppression of peaceful efforts leads to ultimate sacrifice ↓</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-img last-stop"></div>
-                <div class="timeline-content js--fadeInRight">
-                     <div class="content-box culmination-box">
-                        <h2>8. Mi Último Adiós</h2>
-                        <p class="details">Details: Final testament of selfless love for country. Willing acceptance of martyrdom that galvanized the nation and solidified status as National Hero.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div> </div>
-</section>
 
 <section class="legend-section">
     <div class="container">
@@ -134,11 +43,173 @@
     </div>
 </section>
 
+<section class="timeline-section">
+    <div class="container">
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <div class="content-box foundation-box js-trigger-sidebar"
+                         data-title="1. Childhood and Early Influences"
+                         data-type="Foundation"
+                         data-summary="The bedrock of his character laid by family environment and early education."
+                         data-key-points="Exposed to the loving, educated environment of the Mercado family;Early awareness of colonial injustice (e.g., mother's arrest);Impact of Gomburza execution on his young mind."
+                         data-significance="Instilled initial patriotic sentiments and a deeply rooted sense of justice.">
+                        <h2>1. Childhood and Early Influences</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Influenced early perception of distinct identity ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box sentiment-box js-trigger-sidebar"
+                          data-title="2. Sa Aking mga Kabata"
+                          data-type="Evolving Sentiment"
+                          data-summary="Rizal's earliest known poem emphasizing the love for one's native tongue."
+                          data-key-points="Written at an early age (allegedly 8 years old);Connects language directly to freedom and liberty;Asserts that Tagalog is equal to other great languages like Latin or Spanish."
+                          data-significance="Represents his earliest articulation of national identity through cultural pride.">
+                        <h2>2. Sa Aking mga Kabata</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Cultural identity matures into intellectual aspiration ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box pivotal-box js-trigger-sidebar"
+                          data-title="3. A La Juventud Filipina"
+                          data-type="Pivotal Definition"
+                          data-summary="A prize-winning poem where Rizal explicitly defines his vision for the youth."
+                          data-key-points="Coined the famous phrase 'Fair hope of the Fatherland';Urges Filipino youth to break the chains of ignorance through education, science, and arts;Subtly criticized Spanish perceived superiority by elevating native talent."
+                          data-significance="Defines the path for national progress: intellectual development and education."
+                     >
+                        <h2>3. A La Juventud Filipina</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                    <p class="transition-arrow">Educational ideal expands to broader social critique ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box foundation-box js-trigger-sidebar"
+                          data-title="4. Letter to the Young Women of Malolos"
+                          data-type="Concrete Advocacy"
+                          data-summary="A letter praising the women of Malolos for their bravery in demanding education."
+                          data-key-points="Critiqued blind obedience to friars and superstitious religious practices;Advocated for reason and critical thinking over subservience;Emphasized the crucial role of mothers in raising enlightened future citizens."
+                          data-significance="Broadened the reform agenda to include gender equality and social restructuring."
+                     >
+                        <h2>4. Letter to the Young Women of Malolos</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Social critique deepens into confronting deep-seated tyranny ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box pivotal-box js-trigger-sidebar"
+                          data-title="5. The Elias Storyline (Noli Me Tangere)"
+                          data-type="Ideological Crossroads"
+                          data-summary="The personification of the oppressed masses and the argument for radical action."
+                          data-key-points="Elias represents those who have suffered the worst excesses of the colonial state;He argues that peaceful reform is insufficient against violent tyranny;Presents a stark contrast to Ibarra's initial idealism, creating internal ideological conflict."
+                          data-significance="Confronted the reality that oppression might necessitate violent revolution, moving beyond simple reform."
+                     >
+                        <h2>5. The Elias Storyline (Noli Me Tangere)</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">The conflict demands a mature moral resolution ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box sentiment-box js-trigger-sidebar"
+                          data-title="6. Conclusion of El Filibusterismo"
+                          data-type="Moral Resolution"
+                          data-summary="Rizal's philosophical conclusion regarding premature violence through Fr. Florentino."
+                          data-key-points="Simoun's violent, vengeful revolution fails fundamentally;Fr. Florentino argues that independence without civic virtue is useless;Establish the prerequisite: redemption requires sacrifice, love, and moral preparation first."
+                          data-significance="Resolves the ideological crisis by rejecting premature violence in favor of moral preparation."
+                     >
+                        <h2>6. Conclusion of El Filibusterismo</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Moral theory translated into peaceful, organized practice upon return ↓</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                     <div class="content-box foundation-box js-trigger-sidebar"
+                          data-title="7. La Liga Filipina"
+                          data-type="Organized Action"
+                          data-summary="The attempt to translate his mature theories into a concrete organization on Philippine soil."
+                          data-key-points="Aims: Unify the archipelago into a compact, vigorous, and homogeneous body;Mutual protection in every want and necessity;Defense against all violence and injustice;Study and application of reforms."
+                          data-significance="The culminating attempt at a non-violent, unified reform movement."
+                     >
+                        <h2>7. La Liga Filipina</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                     <p class="transition-arrow">Suppression of peaceful efforts leads to ultimate sacrifice ↓</p>
+                </div>
+            </div>
+
+             <div class="timeline-item">
+                <div class="timeline-img last-stop"></div>
+                <div class="timeline-content">
+                     <div class="content-box culmination-box js-trigger-sidebar"
+                          data-title="8. Mi Último Adiós"
+                          data-type="Ultimate Culmination"
+                          data-summary="His final testament, cementing his role as the martyred hero."
+                          data-key-points="Written on the eve of his execution;Expresses selfless love for the country and willingness to die for it;Framed his death not as defeat, but as a necessary sacrifice for the nation's redemption."
+                          data-significance="Galvanized the revolution and solidified his status as the National Hero."
+                     >
+                        <h2>8. Mi Último Adiós</h2>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div>
+</section>
+
+<div class="details-sidebar" id="sidebar">
+    <button class="close-btn" id="closeSidebar">&times;</button>
+    <div class="sidebar-content">
+        <span class="sidebar-type" id="sbType">Type Placeholder</span>
+        <h2 class="sidebar-title" id="sbTitle">Title Placeholder</h2>
+        <p class="sidebar-summary" id="sbSummary">Summary placeholder goes here.</p>
+        
+        <div class="sidebar-section">
+            <h3>Key Points</h3>
+            <ul class="sidebar-list" id="sbPoints"></ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Significance to Nationalism</h3>
+            <p class="sidebar-significance" id="sbSignificance">Significance placeholder.</p>
+        </div>
+    </div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
 <footer class="main-footer">
     <div class="container">
-        <p>4CSC - Group 4: Gloria, Guevarra, Guilifardo, Immaculata, Hernandez, Juico</p>
+        <p>4CSC - Group 4: Gloria, Guevarra, Guilifardo, Hernandez, Immaculata, Juico</p>
     </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

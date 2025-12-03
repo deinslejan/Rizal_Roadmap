@@ -1,0 +1,209 @@
+/* --- Basic Reset and Fonts --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header Styling --- */
+.main-header {
+    background: linear-gradient(135deg, #0038a8 0%, #ce1126 100%); /* Phil Flag inspired gradient */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* --- Timeline Core Structure --- */
+.timeline-section {
+    padding: 20px 0;
+}
+
+.timeline {
+    position: relative;
+}
+
+/* The central vertical road line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #bdc3c7; /* Grey Road Color */
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding-bottom: 40px;
+    position: relative;
+    clear: both;
+}
+
+/* The marker dots on the timeline */
+.timeline-img {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #0038a8; /* Blue marker */
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 20px;
+    z-index: 1;
+}
+
+.timeline-img.last-stop {
+     border-color: #ce1126; /* Red marker for final stop */
+     width: 24px;
+     height: 24px;
+     margin-left: -12px;
+}
+
+/* Timeline Content Container */
+.timeline-content {
+    position: relative;
+    width: 45%;
+    border-radius: 8px;
+    padding: 0;
+}
+
+/* Alternating Left/Right positions */
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+}
+
+/* --- Content Box Styling (Aesthetics) --- */
+.content-box {
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-left: 5px solid #555; /* Default accent border */
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.content-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.details {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* --- Transition Arrows --- */
+.transition-arrow {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+
+/* --- THEMATIC COLORS (Based on your flowchart legend) --- */
+
+/* Foundations (Rectangles in chart) - Blue Accent */
+.foundation-box {
+    border-left-color: #0038a8;
+}
+.foundation-box h2 { color: #0038a8; }
+
+/* Pivotal Definitions (Diamonds in chart) - Yellow/Gold Accent */
+.pivotal-box {
+     border-left-color: #f1c40f;
+}
+.pivotal-box h2 { color: #d3ac00; }
+
+/* Evolving Sentiments (Ovals in chart) - Green Accent */
+.sentiment-box {
+    border-left-color: #27ae60;
+}
+.sentiment-box h2 { color: #27ae60; }
+
+/* Culmination (Final Oval) - Red Accent */
+.culmination-box {
+    border-left-color: #ce1126;
+    background-color: #fff0f0; /* Slight red tint background */
+}
+.culmination-box h2 { color: #ce1126; }
+
+
+/* --- Legend Section --- */
+.legend-section {
+    background-color: #e9ecef;
+    padding: 30px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+.legend-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.color-swatch {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 2px solid transparent;
+}
+
+/* --- Mobile Responsiveness (Crucial for modern aesthetics) --- */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 20px; /* Move line to the left */
+    }
+
+    .timeline-img {
+        left: 20px; /* Move dots to the left */
+    }
+
+    .timeline-content {
+        width: 100%; /* Content takes full width */
+        float: none;
+        padding-left: 50px; /* Space for the line on the left */
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        float: none;
+    }
+    .main-header h1 { font-size: 1.8rem; }
+}

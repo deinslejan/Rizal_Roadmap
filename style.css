@@ -107,15 +107,16 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: rgba(255,255,255,0.5);
     padding: 15px 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: opacity 0.3s ease;
+    margin-bottom: 0;
 }
 
 .progress-bar {
     height: 6px;
-    background: white;
+    background: #2c3e50;
     border-radius: 3px;
     width: 0%;
     transition: width 0.3s ease;
@@ -125,7 +126,7 @@ body {
 
 .progress-text {
     text-align: center;
-    color: white;
+    color: #2c3e50;
     font-size: 0.9rem;
     margin-top: 8px;
     font-weight: 500;
@@ -153,7 +154,7 @@ body {
 
 .toggle-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(104, 56, 56, 0.15);
 }
 
 .toggle-btn.active {
@@ -165,8 +166,9 @@ body {
 /* --- Legend Section --- */
 .legend-section {
     background: rgba(255, 255, 255, 0.7);
-    padding: 25px 0;
-    margin-bottom: 30px;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 0;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
@@ -213,8 +215,8 @@ body {
 
 /* --- Timeline Core Structure --- */
 .timeline-section {
-    padding: 20px 0 150px; /* Increased bottom padding */
-    flex: 1;
+    padding: 20px 0 40px;
+    overflow: hidden;
 }
 
 .timeline {
@@ -493,16 +495,15 @@ body {
 
 /* --- MAP SECTION STYLES (GRID) --- */
 .map-section {
-    padding: 40px 20px;
+    padding: 20px 20px 40px;
     background: rgba(255,255,255,0.9);
-    min-height: 700px;
 }
 
 .map-section h2 {
     text-align: center;
     font-size: 2rem;
     color: #2c3e50;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .locations-grid {
@@ -511,6 +512,7 @@ body {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .location-card {
